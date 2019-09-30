@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+       <!-- <import type="info.androidhive.databinding.utils.BindingUtils" />
+
+        <variable
+            name="user"
+            type="info.androidhive.databinding.model.User" />-->
+
+        <variable
+            name="handlers"
+            type="com.example.databindingrecycler.MainActivity.MyClickHandlers" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+       </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
